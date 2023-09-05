@@ -22,9 +22,16 @@ for k,v in pairs(key) do
     key_team[v] = k
 end
 
+
+------- SET -------------
+
 local keyteam_player = {
 --- insert team
 }
+
+------- SET -------------
+
+
 
 local identifier = {}
 
