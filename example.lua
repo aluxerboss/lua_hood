@@ -1,5 +1,3 @@
-
-
 local key = {
     [1] = "OVER",
     [2] = "DOOWHITE",
