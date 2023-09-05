@@ -1,0 +1,65 @@
+
+
+local key = {
+    [1] = "OVER",
+    [2] = "DOOWHITE",
+    [3] = "DAMNKIDS",
+    [4] = "DEARGOD",
+    [5] = "ASAP",
+    [6] = "GLACIUS",
+    [7] = "NOTORIUS",
+    [8] = "KWANZING",
+    [9] = "DWUNDER19",
+    [10] = "JANANGKAAN",
+    [11] = "IZY",
+    [12] = "JUBU",
+    [13] = "REDLINE",
+    [14] = "SEIRYU",
+    [15] = "STARKREAL",
+    [16] = "SIXTYSIX",
+}
+
+local key_team = {}
+for k,v in pairs(key) do
+    key_team[v] = k
+end
+
+local keyteam_player = {
+    [1] = {
+        'steam:110000148dea20f',
+        'steam:11000011183f943',
+        'steam:11000010d041051',
+        'steam:11000010d892785',
+        'steam:110000107f514ac',
+        'steam:11000010c2a40fe',
+        'steam:110000134845ebc',
+        'steam:1100001074dd758',
+        'steam:110000134f88cfa',
+        'steam:11000015aacc150',
+        'steam:11000013339d42c',
+        'steam:11000011580075b',
+        'steam:110000149743261',
+        'steam:11000010918848d',
+        'steam:1100001373f6ce7',
+        'steam:11000011c7258c5',
+        'steam:11000013d9e0692',
+        'steam:110000142212bfa',
+    }
+}
+
+local identifier = {}
+
+for k,v in pairs(keyteam_player) do
+    for i=1, #v do
+        table.insert(identifier,{
+            ident = v[i],
+            id_team  = key[k]
+        })
+    end
+    
+end
+
+
+for k,v in pairs(identifier) do
+    print('INSERT INTO `data_hood` (`identifier`, `team`) VALUES ("'.. v.ident ..'",'.. key_team[v.id_team] .. ');')
+end
