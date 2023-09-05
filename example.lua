@@ -23,26 +23,7 @@ for k,v in pairs(key) do
 end
 
 local keyteam_player = {
-    [1] = {
-        'steam:110000148dea20f',
-        'steam:11000011183f943',
-        'steam:11000010d041051',
-        'steam:11000010d892785',
-        'steam:110000107f514ac',
-        'steam:11000010c2a40fe',
-        'steam:110000134845ebc',
-        'steam:1100001074dd758',
-        'steam:110000134f88cfa',
-        'steam:11000015aacc150',
-        'steam:11000013339d42c',
-        'steam:11000011580075b',
-        'steam:110000149743261',
-        'steam:11000010918848d',
-        'steam:1100001373f6ce7',
-        'steam:11000011c7258c5',
-        'steam:11000013d9e0692',
-        'steam:110000142212bfa',
-    }
+--- insert team
 }
 
 local identifier = {}
